@@ -3,22 +3,18 @@ from covid import Covid
 
 covid = Covid()
 data0 = covid.get_data()
-#print(len(data0))
+print(len(data0))
 
 confirmed = covid.get_total_confirmed_cases()
 recovered = covid.get_total_recovered()
 deaths = covid.get_total_deaths()
 active = covid.get_total_active_cases()
 
-#data0.append(confirmed)
-#data0.append(recovered)
-#data0.append(deaths)
-#data0.append(active)
-#print(len(data0))
-#print(data0[191])
-#print(data0[190])
-#print(data0[189])
-#print(data0[188])
+data0.append(confirmed)
+data0.append(recovered)
+data0.append(deaths)
+data0.append(active)
+
 #data1 = {"conf":confirmed,"reco":recovered,"death":deaths,"active":active}
 
 

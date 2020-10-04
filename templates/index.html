@@ -13,7 +13,7 @@
 <body>
     <table width="1000" style="text-align: center" align="center" cellpadding="2" class="table">
         <thead>
-        <tr><th colspan="7" size="8px" >COVID Information</th> </tr>
+        <tr><th colspan="7" style="size: 50px">COVID INFORMATION</th> </tr>
 
         <form action="/search/" method="POST">
             {% csrf_token %}
@@ -35,18 +35,6 @@
             <th>Map</th>
         </tr>
 
-        <!--
-        <tr>
-            <td>NA</td>
-            <td>World</td>
-            <td>data.188</td>
-            <td>data.191</td>
-            <td>data.190</td>
-            <td>data.189</td>
-            <td>NA</td>
-        </tr>
-        -->
-
         </thead>
 
         <tbody>
@@ -61,7 +49,15 @@
             <td><a href="http://www.google.com/maps/place/{{ out.latitude }},{{ out.longitude }}">Click</a></td>
         </tr>
         {% else %}
-
+        <tr>
+            <th>NA</th>
+            <th>World</th>
+            <th>{{ data.188}}</th>
+            <th>{{ data.191}}</th>
+            <th>{{ data.190}}</th>
+            <th>{{ data.189}}</th>
+            <th>NA</th>
+        </tr>
         {% for x in data %}
 
         <tr>
