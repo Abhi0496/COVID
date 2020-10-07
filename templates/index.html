@@ -49,13 +49,14 @@
             <td><a href="http://www.google.com/maps/place/{{ out.latitude }},{{ out.longitude }}">Click</a></td>
         </tr>
         {% else %}
+
         <tr>
             <th>NA</th>
             <th>World</th>
-            <th>{{ data.188}}</th>
-            <th>{{ data.191}}</th>
-            <th>{{ data.190}}</th>
-            <th>{{ data.189}}</th>
+            <th>{{ data1.conf}}</th>
+            <th>{{ data1.active}}</th>
+            <th>{{ data1.death}}</th>
+            <th>{{ data1.reco}}</th>
             <th>NA</th>
         </tr>
         {% for x in data %}
